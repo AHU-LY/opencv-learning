@@ -7,7 +7,7 @@ print(A*B,A@B)
 
 #聚合与axis轴
 arr=np.random.randint(0,10,(3,4))
-print(arr,arr.sum(axis=0),arr.sum(axis=1))  #axis=0:列求和，axis=1:行求和
+print(arr,arr.sum(axis=0),arr.sum(axis=1))  #axis=0:每列求和，axis=1:每行求和
 
 
 
