@@ -2,7 +2,7 @@ import cv2
 img=cv2.imread('test.png')
 
 #高斯核大小的影响
-g5=cv2.GaussianBlur(img,(5,5),0)    #blur:模糊；尺寸用的是，不是*
+g5=cv2.GaussianBlur(img,(5,5),0)    #blur:模糊；尺寸用的是，而不是*
 g31=cv2.GaussianBlur(img,(31,31),0)
 
 cv2.imshow('Gaussian 5*5',g5)
