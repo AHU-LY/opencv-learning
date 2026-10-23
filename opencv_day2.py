@@ -15,7 +15,7 @@ cv2.imshow('ROI', roi)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-# 3. 强制缩放到固定尺寸 宽=300，高=200（注意，OpenCV 的 dsize 是先宽后高！）
+# 3. 强制缩放到固定尺寸 宽=300，高=200（注意，OpenCV 的 resize 是先宽后高！）
 resized = cv2.resize(img, (300, 200))
 
 # 4. 按比例缩放（比如长宽都缩放到原来的 0.5 倍）

@@ -1,5 +1,16 @@
 import cv2
 import numpy as np
+#矩阵乘法
+A=np.array([[1,2],[3,4]])   #矩阵对应位置元素相乘
+B=np.array([[5,6],[7,8]])   #矩阵乘法
+print(A*B,A@B)
+
+#聚合与axis轴
+arr=np.random.randint(0,10,(3,4))
+print(arr,arr.sum(axis=0),arr.sum(axis=1))  #axis=0:列求和，axis=1:行求和
+
+
+
 # 1. 读取图像（注意路径别写错）
 img = cv2.imread('test.png')
 
